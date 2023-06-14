@@ -382,4 +382,10 @@ for i in range(10): # i <- 안 겹치게만.
         print(i, j, i * j)
         # 삼중... 사중...
 # 이중 for문? 이중 리스트 컴프리헨션
+
+for i in range(0, 10, 3): # i <- 안 겹치게만.
+    for j in range(0, 10, 2):  # 시퀀스에서 값을 빼내올 때 쓰는 변수명이 안겹치게만 조심. j
+        print(i, j, i * j)
+
 print([(i, j, i * j) for j in range(0, 10, 2) for i in range(0, 10, 3)])
+# 리스트 컴프리헨션 <- 바깥에서 안 쪽으로 우선순위를 가지고 실행.
